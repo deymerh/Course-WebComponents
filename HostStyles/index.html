@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Elements</title>
+</head>
+<body>
+  <my-element>
+    <span slot="title">Tíluto hermoso 1!</span>
+    <span slot="paragraph">Este es un párrafo</span>
+  </my-element>
+  <my-element class="blue">
+    <span slot="title">Tíluto hermoso 2!</span>
+    <span slot="paragraph">Este es un párrafo</span>
+  </my-element>
+  <my-element>
+    <span slot="title">Tíluto hermoso 3!</span>
+    <span slot="paragraph">Este es un párrafo</span>
+  </my-element>
+  <my-element>
+    <span slot="title">Tíluto hermoso 4!</span>
+    <span slot="paragraph">Este es un párrafo</span>
+  </my-element>
+  <my-element yellow>
+    <span slot="title">Tíluto hermoso 5!</span>
+    <span slot="paragraph">Este es un párrafo</span>
+  </my-element>
+  <article class="card">
+    <my-element yellow>
+      <span slot="title">Tíluto hermoso card!</span>
+      <span slot="paragraph">Este es un párrafo</span>
+    </my-element>
+  </article>
+  <script type="module" src="./my-element.js"></script>
+</body>
+</html>
